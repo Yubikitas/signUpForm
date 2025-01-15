@@ -25,39 +25,44 @@
         <div class = "inputForm">
             <p>Let's do this! </p>
 
-            <div class= "inputArea">
-                <div class="inputRow">
-                    <form>
-                        <p><label for ="firstName" class ="formFirstName">First Name</label></p>
-                            <input id = "firstName" type= "text">
-                        <p><label for ="lastName" class = "formLastName">Last Name</label></p>
-                            <input id = "lastName" type = "text">
-                    </form>
+            <form>
+                <div>
+                    <p><label for ="firstName" class ="formFirstName">First Name</label></p>
+                        <input id = "firstName" type= "text" required>
                 </div>
-                <div class="inputRow">
-                    <form>
-                        <p><label for ="emailEntry" class ="emailForm">Email</label></p>
-                            <input id = "emailEntry" type= "email">
-                        <p><label for ="phoneNumber" class = "phoneNumber">Phone Number</label></p>
-                            <input id = "phoneNumber" type = "text">
-                    </form>
+                <div>
+                    <p><label for ="lastName" class = "formLastName">Last Name</label></p>
+                    <input id = "lastName" type = "text" required>
                 </div>
-                <form>
-                     <div class="inputRow">
-                         <p><label for ="passwordInput" class ="passwordInput">Password</label></p>
-                             <input id = "passwordInput" type= "text">
-                         <p><label for ="passwordConfirm" class = "passwordConfirm">Confirm Password</label></p>
-                             <input id = "passwordConfirm" type = "text">
-                     </div>
-                 </form>
-            </div>     
+            </form>
+            <form>
+                <div>
+                    <p><label for ="emailEntry" class ="emailForm">Email</label></p>
+                        <input id = "emailEntry" type= "email" required>
+                </div>
+                <div>
+                    <p><label for ="phoneNumber" class = "phoneNumber">Phone Number</label></p>
+                        <input id = "phoneNumber" type = "text" required pattern = "^[0-9]*$">
+                </div>
+            </form>
+            <form>
+                 <div>
+                     <p><label for ="passwordInput" class ="passwordInput">Password</label></p>
+                         <input id = "passwordInput" type= "password" required minlength="6">
+                 </div>
+                 <div>
+                     <p><label for ="passwordConfirm" class = "passwordConfirm">Confirm Password</label></p>
+                         <input id = "passwordConfirm" type = "password" required minlength="6"> 
+                 </div>
+             </form>
         
         </div>
 
 
         
         <div class = submitForm>
-            <button>Create Account</button>
+            <button type ="submit">Create Account</button>
+            <p>Already have an account? Sign In</p>
         </div>
     </div>
 </body>

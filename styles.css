@@ -100,6 +100,7 @@ body{
 .inputForm >p{
     font-size: 1.5em; 
     font-weight: bold; 
+    padding: 20px;
 }
 
 
@@ -108,22 +109,24 @@ body{
     height: 20vh; 
 }
 
-.formRow {
-    margin-bottom: 40px;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
+
 
   p > label {
     display: block;
   }
 
+form{
+    width: 100%; 
+    padding: 20px; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: start;
+    gap: 50px;  
+}
+
 
   .formRow input[type='text'],
   .formRow input[type='email'] {
-    
     background-color: #FFFFFF;
     border: 1px solid #D6D9DC;
     border-radius: 3px;
@@ -133,9 +136,24 @@ body{
   }
 
   input:invalid {
-    box-shadow: 0 0 5px 1px red;
+    box-shadow: 0 0 2px 1px red;
   }
   
-  input:focus:invalid {
-    box-shadow: none;
+ 
+
+  input:focus{ 
+    box-shadow: 0 0 2px 1px blue; 
   }
+
+  .submitForm{ 
+    padding: 20px; 
+  }
+
+  .submitForm button{
+    background-color: #596D48;
+    color: white; 
+    margin: 20px; 
+  }
+  
+
+ 
